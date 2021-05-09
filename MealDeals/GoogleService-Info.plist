@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>989587285618-2q0tgu965ua3912l0h9vfnlh12b9o43u.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.989587285618-2q0tgu965ua3912l0h9vfnlh12b9o43u</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCcS_3NkOxg4_2L-BktzQJCZV3cN4xYB30</string>
+	<key>GCM_SENDER_ID</key>
+	<string>989587285618</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.drewscheffer.MealDeals</string>
+	<key>PROJECT_ID</key>
+	<string>mealdeals-ab9d6</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mealdeals-ab9d6.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:989587285618:ios:8b69b1630bd1894ea644eb</string>
+</dict>
+</plist>
