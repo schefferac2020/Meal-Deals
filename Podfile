@@ -8,4 +8,6 @@ target 'MealDeals' do
   # Pods for MealDeals
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
 end

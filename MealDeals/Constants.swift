@@ -9,5 +9,6 @@ struct K {
 
     static let registerSegue = "RegisterToChat"
     static let loginSegue = "LoginToChat"
+    static let alreadyLoggedInSegue = "openToSignIn"
     
 }

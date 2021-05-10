@@ -56,11 +56,12 @@
                     <connections>
                         <outlet property="logInButton" destination="HnY-ZH-RQW" id="8Tw-Iq-5ZB"/>
                         <outlet property="registerButton" destination="xjE-L5-mYc" id="sxy-aQ-HCm"/>
+                        <segue destination="PKG-OE-OMw" kind="presentation" identifier="openToSignIn" animates="NO" modalPresentationStyle="fullScreen" id="hHd-yE-bI0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140.57971014492756" y="128.57142857142856"/>
+            <point key="canvasLocation" x="58" y="129"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="WVh-YD-cvQ">
@@ -205,12 +206,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="urT-wo-PYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1012" y="-193"/>
+            <point key="canvasLocation" x="996" y="-447"/>
         </scene>
-        <!--View Controller-->
+        <!--Logged In View Controller-->
         <scene sceneID="fgj-Nz-bGV">
             <objects>
-                <viewController id="PKG-OE-OMw" sceneMemberID="viewController">
+                <viewController id="PKG-OE-OMw" customClass="LoggedInViewController" customModule="MealDeals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E7V-8N-Fcf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -222,6 +223,14 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pck-21-BJi">
+                                <rect key="frame" x="55" y="68" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="logoutButtonPressed:" destination="PKG-OE-OMw" eventType="touchUpInside" id="9Ca-3H-I5l"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="prW-p5-dwM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -425,7 +434,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="yhc-ey-eWg"/>
+        <segue reference="hHd-yE-bI0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="backArrow" width="25" height="25"/>

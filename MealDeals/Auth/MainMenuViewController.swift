@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class MainMenuViewController: UIViewController {
         
@@ -18,8 +19,22 @@ class MainMenuViewController: UIViewController {
 
         logInButton.defaultColor = UIColor(red: 0.6, green: 0.6, blue: 0.6, alpha: 0.7)
         registerButton.defaultColor = UIColor(red: 0.6, green: 0.6, blue: 0.6, alpha: 0.7)
-
         
+        
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        authenticateUserAndConfigureView()
+    }
+    
+    
+    func authenticateUserAndConfigureView() {
+        print(1)
+        if (Auth.auth().currentUser != nil){
+            print(2)
+            self.performSegue(withIdentifier: K.alreadyLoggedInSegue, sender: self)
+        }
     }
 
 

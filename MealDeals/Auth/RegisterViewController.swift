@@ -61,13 +61,27 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     @objc func handleSignUp() {
         toggleContinueButton(isEnabled: true)
         
-        if let email = emailField.text, let password = passwordField.text {
+        if let email = emailField.text, let password = passwordField.text, let username = usernameField.text {
             Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
                 if let e = error {
                     print(e.localizedDescription)
-                }else{
-                    self.performSegue(withIdentifier: K.registerSegue, sender: self)
+                    return;
                 }
+                
+                guard let uid = authResult?.user.uid else { return }
+                
+                let values = ["email": email, "username": username]
+                Database.database().reference().child("users").child(uid).updateChildValues(values) { (error, ref) in
+                    if let e = error {
+                        print(e.localizedDescription)
+                        return;
+                    }
+                }
+                
+                print("Succesffully Signed user up!")
+                self.performSegue(withIdentifier: K.registerSegue, sender: self)
+                
+                
             }
         }
     }

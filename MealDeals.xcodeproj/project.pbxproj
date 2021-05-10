@@ -10,6 +10,7 @@
 		A9E6AFF5C5B5E0BBEA803D6F /* Pods_MealDeals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3897E02AE60CD536F83385D /* Pods_MealDeals.framework */; };
 		C38EB7D226489FE4001FB71E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38EB7D126489FE4001FB71E /* LoginViewController.swift */; };
 		C38EB7D52648A615001FB71E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38EB7D42648A615001FB71E /* Constants.swift */; };
+		C3914ECA2648B7940002DD1E /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3914EC92648B7940002DD1E /* LoggedInViewController.swift */; };
 		C3FCBE542648887D00CA9111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FCBE532648887D00CA9111 /* AppDelegate.swift */; };
 		C3FCBE562648887D00CA9111 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FCBE552648887D00CA9111 /* SceneDelegate.swift */; };
 		C3FCBE582648887D00CA9111 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FCBE572648887D00CA9111 /* MainMenuViewController.swift */; };
@@ -27,6 +28,7 @@
 		B3897E02AE60CD536F83385D /* Pods_MealDeals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MealDeals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38EB7D126489FE4001FB71E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C38EB7D42648A615001FB71E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C3914EC92648B7940002DD1E /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
 		C3FCBE502648887D00CA9111 /* MealDeals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealDeals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3FCBE532648887D00CA9111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3FCBE552648887D00CA9111 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				C3FCBE7A26488DD900CA9111 /* GoogleService-Info.plist */,
 				C3FCBE612648887F00CA9111 /* Info.plist */,
 				C38EB7D42648A615001FB71E /* Constants.swift */,
+				C3914EC92648B7940002DD1E /* LoggedInViewController.swift */,
 			);
 			path = MealDeals;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				C3FCBE582648887D00CA9111 /* MainMenuViewController.swift in Sources */,
 				C3FCBE542648887D00CA9111 /* AppDelegate.swift in Sources */,
 				C3FCBE562648887D00CA9111 /* SceneDelegate.swift in Sources */,
+				C3914ECA2648B7940002DD1E /* LoggedInViewController.swift in Sources */,
 				C3FCBE80264893C200CA9111 /* RoundedButton.swift in Sources */,
 				C38EB7D52648A615001FB71E /* Constants.swift in Sources */,
 			);
