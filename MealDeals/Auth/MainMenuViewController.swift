@@ -30,9 +30,7 @@ class MainMenuViewController: UIViewController {
     
     
     func authenticateUserAndConfigureView() {
-        print(1)
         if (Auth.auth().currentUser != nil){
-            print(2)
             self.performSegue(withIdentifier: K.alreadyLoggedInSegue, sender: self)
         }
     }

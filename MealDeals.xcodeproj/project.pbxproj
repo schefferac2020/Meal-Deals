@@ -11,6 +11,10 @@
 		C38EB7D226489FE4001FB71E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38EB7D126489FE4001FB71E /* LoginViewController.swift */; };
 		C38EB7D52648A615001FB71E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38EB7D42648A615001FB71E /* Constants.swift */; };
 		C3914ECA2648B7940002DD1E /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3914EC92648B7940002DD1E /* LoggedInViewController.swift */; };
+		C3CCFA4D264B1B8C00866ECB /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CCFA4C264B1B8C00866ECB /* HomeTableViewController.swift */; };
+		C3CCFA50264B1C6A00866ECB /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CCFA4F264B1C6A00866ECB /* RecipeCell.swift */; };
+		C3CCFA53264B1CAA00866ECB /* RecipeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3CCFA52264B1CAA00866ECB /* RecipeCell.xib */; };
+		C3CCFA56264B2A7B00866ECB /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CCFA55264B2A7B00866ECB /* ShadowView.swift */; };
 		C3FCBE542648887D00CA9111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FCBE532648887D00CA9111 /* AppDelegate.swift */; };
 		C3FCBE562648887D00CA9111 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FCBE552648887D00CA9111 /* SceneDelegate.swift */; };
 		C3FCBE582648887D00CA9111 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FCBE572648887D00CA9111 /* MainMenuViewController.swift */; };
@@ -29,6 +33,10 @@
 		C38EB7D126489FE4001FB71E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C38EB7D42648A615001FB71E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C3914EC92648B7940002DD1E /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
+		C3CCFA4C264B1B8C00866ECB /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		C3CCFA4F264B1C6A00866ECB /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		C3CCFA52264B1CAA00866ECB /* RecipeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeCell.xib; sourceTree = "<group>"; };
+		C3CCFA55264B2A7B00866ECB /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		C3FCBE502648887D00CA9111 /* MealDeals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealDeals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3FCBE532648887D00CA9111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3FCBE552648887D00CA9111 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +81,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C3CCFA49264B1B4E00866ECB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C3CCFA4C264B1B8C00866ECB /* HomeTableViewController.swift */,
+				C3CCFA4F264B1C6A00866ECB /* RecipeCell.swift */,
+				C3CCFA52264B1CAA00866ECB /* RecipeCell.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		C3FCBE472648887D00CA9111 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +123,7 @@
 				C3FCBE612648887F00CA9111 /* Info.plist */,
 				C38EB7D42648A615001FB71E /* Constants.swift */,
 				C3914EC92648B7940002DD1E /* LoggedInViewController.swift */,
+				C3CCFA49264B1B4E00866ECB /* Home */,
 			);
 			path = MealDeals;
 			sourceTree = "<group>";
@@ -114,6 +133,7 @@
 			children = (
 				C3FCBE7F264893C200CA9111 /* RoundedButton.swift */,
 				C3FCBE82264893F800CA9111 /* Gradient.swift */,
+				C3CCFA55264B2A7B00866ECB /* ShadowView.swift */,
 			);
 			path = "Add Ons";
 			sourceTree = "<group>";
@@ -189,6 +209,7 @@
 			files = (
 				C3FCBE602648887F00CA9111 /* LaunchScreen.storyboard in Resources */,
 				C3FCBE7B26488DD900CA9111 /* GoogleService-Info.plist in Resources */,
+				C3CCFA53264B1CAA00866ECB /* RecipeCell.xib in Resources */,
 				C3FCBE5D2648887F00CA9111 /* Assets.xcassets in Resources */,
 				C3FCBE5B2648887D00CA9111 /* Main.storyboard in Resources */,
 			);
@@ -243,11 +264,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3CCFA56264B2A7B00866ECB /* ShadowView.swift in Sources */,
 				C38EB7D226489FE4001FB71E /* LoginViewController.swift in Sources */,
 				C3FCBE83264893F800CA9111 /* Gradient.swift in Sources */,
 				C3FCBE8B26489F4300CA9111 /* RegisterViewController.swift in Sources */,
 				C3FCBE582648887D00CA9111 /* MainMenuViewController.swift in Sources */,
+				C3CCFA4D264B1B8C00866ECB /* HomeTableViewController.swift in Sources */,
 				C3FCBE542648887D00CA9111 /* AppDelegate.swift in Sources */,
+				C3CCFA50264B1C6A00866ECB /* RecipeCell.swift in Sources */,
 				C3FCBE562648887D00CA9111 /* SceneDelegate.swift in Sources */,
 				C3914ECA2648B7940002DD1E /* LoggedInViewController.swift in Sources */,
 				C3FCBE80264893C200CA9111 /* RoundedButton.swift in Sources */,

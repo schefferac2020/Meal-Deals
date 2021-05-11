@@ -14,11 +14,20 @@ let secondaryColor = UIColor(red: 247/255, green: 183/255, blue: 51/255, alpha: 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        
+//        if (Auth.auth().currentUser != nil){
+//            print("We got here")
+//            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//            let signedInController = mainStoryboard.instantiateViewController(identifier: "loggedIn")
+//
+//            window?.rootViewController = signedInController
+//        }
+        
         return true
     }
     
